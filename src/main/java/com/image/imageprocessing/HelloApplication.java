@@ -24,7 +24,7 @@ public class HelloApplication extends Application {
         drawMultipleImagesOnCanvas.initialize(stage);
 
         ImageReadInf imageIO = new FileImageIO();
-        BufferedImage image = imageIO.readImage("C:\\Users\\Lovepreet\\Desktop\\imageProcessing\\src\\main\\java\\com\\image\\imageprocessing\\io\\test.jpg");
+        BufferedImage image = imageIO.readImage("C:\\Users\\HP\\Desktop\\imageProcessingJava-add-workingParallelRendering\\src\\main\\java\\com\\image\\imageprocessing\\io\\test.jpg");
         ImageProcessor processor = new ImageProcessor();
         ImageFilter imageFilter = new GreyScaleFilter();
         processor.processImage(image, 10, imageFilter, drawMultipleImagesOnCanvas);
